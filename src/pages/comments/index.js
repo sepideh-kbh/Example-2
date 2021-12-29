@@ -39,7 +39,6 @@ const Comments = () => {
       >
         <Meta title={location.state.title} className='card-title' />
       </Card>
-      {/* <div className='comments-scrollmaker'> */}
       {comments.filter(item => item.postId === location.state.id).map(item => (
         <div
           className='comment-wrapper d-flex align-items-center justify-content-around flex-row'
@@ -54,7 +53,6 @@ const Comments = () => {
         </div>
       ))
       }
-      {/* </div> */}
     </Spin>
   )
 }
