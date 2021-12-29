@@ -48,7 +48,7 @@ const Comments = () => {
           <div className='d-flex align-items-center flex-column flex-grow-4 comment-content'>
             <Text className='author-name'>{item.name}</Text>
             <Text className='author-email'>{item.email}</Text>
-            <Paragraph className='author-body'>{`'${item.body}'`}</Paragraph>
+            <Paragraph className='author-body'>{`"${item.body}"`}</Paragraph>
           </div>
         </div>
       ))
