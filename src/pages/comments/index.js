@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Typography, Card, Spin } from 'antd';
 import avatar from './../../assets/images/avatar.jpg';
 import image from './../../assets/images/shop-img.jpg';
 import { getComments } from '../../services/services';
 import './../styles.scss';
-import { useLocation } from 'react-router-dom';
 
 const Comments = () => {
   const { Text, Paragraph } = Typography;
